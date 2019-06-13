@@ -7,7 +7,7 @@ import objectAssign from 'object-assign';
 import NxFetch2Base64 from 'next-fetch2base64';
 
 const CLASS_NAME = 'react-base64image';
-const DATA_RE = /data:image/;
+const DATA_RE = /^data:image/;
 
 export default class extends Component {
   /*===properties start===*/
@@ -39,9 +39,11 @@ export default class extends Component {
 
   update() {
     const { src } = this.state;
-    NxFetch2Base64.request(src).then((base64) => {
-      this.setState({ src: base64 });
-    });
+    if (!DATA_RE.test(src)) {
+      NxFetch2Base64.request(src).then((base64) => {
+        this.setState({ src: base64 });
+      });
+    }
   }
 
   render() {
