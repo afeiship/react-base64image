@@ -12,6 +12,8 @@ import {
 export default merge(baseConfig, {
   entry: inputs.build(),
   output: outputs.build(),
-  externals: externals.base(),
+  externals: externals.base({
+    'next-fetch2base64': 'next-fetch2base64'
+  }),
   plugins: [plugins.clean(), plugins.copyStyles()]
 });
