@@ -35,15 +35,3 @@ npm install -S afeiship/react-base64image
 
 ## documentation
 - https://afeiship.github.io/react-base64image/
-
-## resouces
-- https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
-- https://www.valentinog.com/blog/react-webpack-babel/
-- https://jestjs.io/docs/en/tutorial-react#snapshot-testing-with-mocks-enzyme-and-react-16
-- https://testing-library.com/docs/react-testing-library/api
-
-## todos
-- [ ] Add: semver number for every build files.
-- [ ] Add: need output css files.
-- [ ] Add: PWA support for docs.
-- [ ] BUG: npm run dev will clean dist.
