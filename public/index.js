@@ -5,9 +5,17 @@ import './assets/style.scss';
 
 class App extends React.Component {
   render() {
+    const url1 =
+      'https://tu-dev.finxos.com/tu-resources/images/thumbnail/2019_05/2019_05_17/73796d626f6c7b99c653ef06e736447973d7d2baf310.PNG' +
+      '?t=' +
+      Date.now();
+    const url =
+      'https://tu-dev.finxos.com/tu-resources/images/thumbnail/2019_05/2019_05_17/73796d626f6c7b99c653ef06e736447973d7d2baf310.PNG' +
+      '?t=' +
+      Date.now();
     return (
       <div className="app-container">
-        <ReactBase64image src="https://tu-dev.finxos.com/tu-resources/xlsfile/thumbnail/2019_04/2019_04_18/73796d626f6c9bc8e91a32651d7e31448a37ec442a38.png" />
+        <ReactBase64image src={url} />
       </div>
     );
   }
