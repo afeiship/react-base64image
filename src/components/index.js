@@ -7,7 +7,7 @@ import objectAssign from 'object-assign';
 import NxFetch2Base64 from 'next-fetch2base64';
 
 const CLASS_NAME = 'react-base64image';
-const DATA_RE = /^data:image/;
+const DATA_RE = /^data:/;
 
 export default class extends Component {
   /*===properties start===*/
