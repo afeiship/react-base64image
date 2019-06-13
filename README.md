@@ -24,7 +24,7 @@ npm install -S afeiship/react-base64image
   class App extends React.Component{
     render(){
       return (
-        <ReactBase64image />
+        <ReactBase64image src="http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg" />
       )
     }
   }
