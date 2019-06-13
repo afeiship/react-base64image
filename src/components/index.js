@@ -52,6 +52,7 @@ export default class extends Component {
     return (
       <img
         className={classNames(CLASS_NAME, className)}
+        data-original={src}
         src={_src}
         {...props}
       />
